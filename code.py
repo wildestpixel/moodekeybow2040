@@ -33,6 +33,8 @@ rgb = (255, 255, 255)
 step = 0
 
 def rainbow_on():
+    global step
+    step += 1
     for i in range(16):
         x, y = number_to_xy(i)
         hue = (x + y + (step / 20)) / 8
@@ -65,9 +67,9 @@ for key in keys:
         countup()
         print(counter)
         print(things[counter])
-        keyboard.send(Keycode.CONTROL, Keycode.C)
+        layout.write("scrntg")
+        keyboard.send(Keycode.ENTER)
 
 while True:
     keybow.update()
-    step += 1
     things[counter]()
