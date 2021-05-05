@@ -1,0 +1,2 @@
+#mpc clear; mpc add http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio2_mf_p; mpc play
+mpc clear; mpc add http://a.files.bbci.co.uk/media/live/manifesto/audio/simulcast/hls/uk/sbr_high/ak/bbc_radio_two.m3u8; mpc play

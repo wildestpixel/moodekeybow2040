@@ -1,0 +1,1 @@
+mpc clear; mpc add http://media-ice.musicradio.com:80/GoldMP3; mpc play

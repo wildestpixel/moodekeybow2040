@@ -1,0 +1,1 @@
+mpc clear; mpc add http://live-absolute.sharp-stream.com/absoluteradio.mp3; mpc play

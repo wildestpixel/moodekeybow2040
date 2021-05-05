@@ -1,0 +1,12 @@
+#!/bin/bash
+service=mpd_oled
+
+if (( $(ps -ef | grep -v grep | grep $service | wc -l) > 0 ))
+then
+  sudo systemctl stop mpd_oled
+  sudo systemctl start timetemp
+else
+  sudo systemctl stop timetemp
+  sudo systemctl start mpd_oled
+fi
+
