@@ -63,7 +63,6 @@ for key in keys:
         print(things[counter])
         layout.write("scrntg")
         keyboard.send(Keycode.ENTER)
-        # keyboard.send(Keycode.CONTROL, Keycode.C)
 
 rgb = (255, 255, 255)
 step = 0
@@ -72,5 +71,4 @@ things = [ rainbow_on, rainbow_off ]
 
 while True:
     keybow.update()
-    # step += 1
     things[counter]()
