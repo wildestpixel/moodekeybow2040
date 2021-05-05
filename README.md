@@ -4,7 +4,7 @@ A Circuitpython Script (working with 6.2 and 7 beta at present) to aneable conso
 
 Working in conjunction with https://github.com/antiprism/mpd_oled and incorporating a time and temperature / humidity clock UI on an Adafruit i2C SSD1306 OLED, the overall effect is relatively polished.
 
-Of the scripts, those bashs scripts should be placed in /usr/local/bin and made executable via sudo chmod +x, and the timetemp.py and fonts files should stay in the Scripts folder recursively under <code>/home/pi</cocde>. Naturally you would need a DPS310 to run as is but can be easily modified to run with bme280 etc. etc. To install the Deja Vu font that is required, simply get from apt with <code>sudo apt-get install ttf-dejavu</code>
+Of the scripts, those bashs scripts should be placed in /usr/local/bin and made executable via sudo chmod +x, and the timetemp.py and fonts files should stay in the Scripts folder recursively under <code>/home/pi</code>. Naturally you would need a DPS310 to run as is but can be easily modified to run with bme280 etc. etc. To install the Deja Vu font that is required, simply get from apt with <code>sudo apt-get install ttf-dejavu</code>
 
 A service file is included in the scripts folder which should be copied into <code>/etc/systemd/system</code> to enable the toggling between mpd_oled and timetemp.py
 
