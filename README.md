@@ -13,3 +13,5 @@ Runnning the buttons from the main Circuitpython code.py you will note that ther
 Pressing and holding any of the buttons (usually in practice the one linked with <code>mpc stop</code>) turns out the lights on the keybow and also disables <code>mpd_oled</code> - both to allow you a dark peaceful room and prevent OLED burn.
 
 The <code>toggle_disp1</code> that is triggered from the top left button changes the display between <code>mpd_oled</code> and the timetemp python script, depending on what you want to see on the screen
+
+![Alt text](IMG_1076.jpg?raw=true "Title")
