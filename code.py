@@ -29,9 +29,6 @@ keymap =    ["rad1",
              "mpc next",
              "volu"]
 
-rgb = (255, 255, 255)
-step = 0
-
 def rainbow_on():
     global step
     step += 1
@@ -51,9 +48,6 @@ def countup():
     global counter
     counter = (counter + 1) % len(things)
 
-counter = 0
-things = [ rainbow_on, rainbow_off ]
-
 for key in keys:
     @keybow.on_press(key)
     def press_handler(key):
@@ -69,7 +63,14 @@ for key in keys:
         print(things[counter])
         layout.write("scrntg")
         keyboard.send(Keycode.ENTER)
+        # keyboard.send(Keycode.CONTROL, Keycode.C)
+
+rgb = (255, 255, 255)
+step = 0
+counter = 0
+things = [ rainbow_on, rainbow_off ]
 
 while True:
     keybow.update()
+    # step += 1
     things[counter]()
