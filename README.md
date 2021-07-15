@@ -1,6 +1,6 @@
 # moodekeybow2040
 
-A Circuitpython Script (working with 6.2 and 7 beta at present) to aneable console input controlling MoodeAudio player https://github.com/moode-player.
+A Circuitpython Script (working with 6.2 and 7 beta at present) to enable console input controlling MoodeAudio player https://github.com/moode-player.
 
 Working in conjunction with https://github.com/antiprism/mpd_oled and incorporating a time and temperature / humidity clock UI on an Adafruit i2C SSD1306 OLED, the overall effect is relatively polished.
 
